@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1>Sport / Chwaraeon</h1>
+      <p class="lead text-muted">Pick a topic or scroll down to start quizzing!</p>
+        <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2">Rugby</a>
+        <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2">Football</a>
+        <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2">Cycling</a>
+        <a href="{{ url_for('jumbo') }}" class="btn btn-outline-success my-2">Olympics</a>
+        <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2">Other</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="text-muted">
+    <div class="container text-center">
+        <p>Love Scottish trivia? Visit our sister site: <a href="https://www.weequiz.com">weequiz.com</a></p>
+       <a href="#">Back to top</a>
+    </div>
+  </footer>
+
+{% endblock %}
