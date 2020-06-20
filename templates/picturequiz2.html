@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+
+
+<style>
+  #quizbox {
+      border: solid;
+      border-width: 1px;
+  } 
+  .container {
+    align-items: center;
+  }
+</style>
+
+<div class="container text-center">
+  <p class="lead my-3">{{ myObject.description|e }}</p>
+  <div class="btn-group">
+    <input type="text" class="form-control" id="q1">
+    <div class="container">
+        <button class="btn btn-primary" type="submit" onclick="myFunction()">Submit</button>
+        <button class="btn btn-secondary" type="submit" onclick="revealFunction()">Reveal</button>
+      </div>
+      </div>
+<div class="container">
+<p id="reveal"></p>
+<p id="score"></p>
+  </div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ myObject.questions[0] }}" width="350" height="225">
+            <p class="text-right" style="color: darkgray;">{{ myObject.credits[0] }}</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ myObject.questions[1] }}" width="350" height="225">
+            <p class="text-right" style="color: darkgray;">{{ myObject.credits[1] }}</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ myObject.questions[2] }}" width="350" height="225">
+            <p class="text-right" style="color: darkgray;">{{ myObject.credits[2] }}</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ myObject.questions[3] }}" width="350" height="225">
+            <p class="text-right" style="color: darkgray;">{{ myObject.credits[3] }}</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ myObject.questions[4] }}" width="350" height="225">
+            <p class="text-right" style="color: darkgray;">{{ myObject.credits[4] }}</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ myObject.questions[5] }}" width="350" height="225">
+            <p class="text-right" style="color: darkgray;">{{ myObject.credits[5] }}</p>
+          </div>
+        </div>
+        </div>
+
+
+  <script>
+
+    function myFunction() {
+    var counter = '';
+    var input1 = document.getElementById("q1").value;
+    var answer1 = "{{ myObject.answers }}";
+    if (input1.toLowerCase() === answer1) {
+        counter = 'Correct!';
+        document.getElementById("q1").style.borderColor = "green";
+    } else {
+        counter = "Incorrect!";
+        document.getElementById("q1").style.borderColor = "red";
+    }
+    document.getElementById("score").innerHTML = counter;
+}
+
+function revealFunction() {
+var reveal1 = document.getElementById("q1");
+reveal1.value = "{{ myObject.answers }}";
+reveal1.value = reveal1.value.charAt(0).toUpperCase() + reveal1.value.slice(1)
+}
+
+</script>
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+{% endblock %}

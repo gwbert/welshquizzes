@@ -5,10 +5,12 @@
   .text-right {
     font-size: small;
   }
+  .lead {
+    padding-top: 15px;
+  }
 </style>
     
     <div class="container text-center">
-      <h1></h1>
       <p class="lead text-muted">{{ myObject.description|e }}</p>
     </div>
     
@@ -17,7 +19,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="{{ myObject.questions[0] }}" width="350" height="225">
+              <img src="{{ myObject.questions[0] }}" alt="welshquizzes.com picture quiz image 1" width="350" height="225">
               <p class="text-right" style="color: darkgray;">{{ myObject.credits[0]|e }}</p>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -31,7 +33,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="{{ myObject.questions[1] }}" width="350" height="225">
+              <img src="{{ myObject.questions[1] }}" alt="welshquizzes.com picture quiz image 2" width="350" height="225">
               <p class="text-right" style="color: darkgray;">{{ myObject.credits[1]|e }}</p>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -45,7 +47,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="{{ myObject.questions[2] }}" width="350" height="225">
+              <img src="{{ myObject.questions[2] }}" alt="welshquizzes.com picture quiz image 3" width="350" height="225">
               <p class="text-right" style="color: darkgray;">{{ myObject.credits[2]|e }}</p>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -60,7 +62,7 @@
   
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="{{ myObject.questions[3] }}" width="350" height="225">
+              <img src="{{ myObject.questions[3] }}" alt="welshquizzes.com picture quiz image 4" width="350" height="225">
               <p class="text-right" style="color: darkgray;">{{ myObject.credits[3]|e }}</p>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -74,7 +76,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="{{ myObject.questions[4] }}" width="350" height="225">
+              <img src="{{ myObject.questions[4] }}" alt="welshquizzes.com picture quiz image 5" width="350" height="225">
               <p class="text-right" style="color: darkgray;">{{ myObject.credits[4]|e }}</p>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -88,7 +90,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="{{ myObject.questions[5] }}" width="350" height="225">
+              <img src="{{ myObject.questions[5] }}" alt="welshquizzes.com picture quiz image 6" width="350" height="225">
               <p class="text-right" style="color: darkgray;">{{ myObject.credits[5]|e }}</p>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">

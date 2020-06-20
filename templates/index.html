@@ -1,12 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-<style>
-  .text-right {
-    font-size: small;
-  }
-</style>
-
 <main role="main">
 
     <section class="jumbotron text-center">
@@ -18,14 +12,15 @@
           <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2 btn-lg">History</a>
           <a href="{{ url_for('jumbo') }}" class="btn btn-outline-success my-2 btn-lg">Jumbo Quizzes</a>
           <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Sport</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Politics</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Rugby</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Football</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Language</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Literature</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Film</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">TV</a>
-          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Music</a>
+          <a href="{{ url_for('history', _anchor='politics') }}" class="btn btn-outline-success my-2 btn-lg">Politics</a>
+          <a href="{{ url_for('sport', _anchor='rugby') }}" class="btn btn-outline-success my-2 btn-lg">Rugby</a>
+          <a href="{{ url_for('sport', _anchor='football') }}" class="btn btn-outline-success my-2 btn-lg">Football</a>
+          <a href="{{ url_for('culture', _anchor='language') }}" class="btn btn-outline-success my-2 btn-lg">Language</a>
+          <a href="{{ url_for('culture', _anchor='literature') }}" class="btn btn-outline-success my-2 btn-lg">Literature</a>
+          <a href="{{ url_for('culture', _anchor='film') }}" class="btn btn-outline-success my-2 btn-lg">Film</a>
+          <a href="{{ url_for('culture', _anchor='tv') }}" class="btn btn-outline-success my-2 btn-lg">TV</a>
+          <a href="{{ url_for('culture', _anchor='music') }}" class="btn btn-outline-success my-2 btn-lg">Music</a>
+          <a href="{{ url_for('history', _anchor='quick') }}" class="btn btn-outline-success my-2 btn-lg">Quick Quizzes</a>
         </p>
       </div>
     </section>
@@ -36,10 +31,10 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/32/38823913_84496fd714.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/32/38823913_84496fd714.jpg" alt="welsh beaches" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">neepster license CC BY-SA 2</p>
                 <div class="card-body">
-                  <a href="{{ url_for('picturequiz', quizName='beaches') }}"><p class="card-text text-center btn-outline-danger btn-lg">Beaches / Traethau</p></a>
+                  <a href="{{ url_for('picturequiz', quizName='beaches') }}"><p class="card-text text-center btn-outline-danger btn-lg">Beaches</p></a>
                   <div class="d-flex justify-content-between align-items-center">
                 </div>
               </div>
@@ -48,10 +43,10 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/3354/3635851107_c02427428d_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/3354/3635851107_c02427428d_b.jpg" alt="cardiff" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">shining.darkness licensed CC BY 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">Cardiff / Caerdydd</p></a>
+                <a href="{{ url_for('picturequiz', quizName='cardiff') }}"><p class="card-text text-center btn-outline-danger btn-lg">Cardiff</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -63,10 +58,10 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/7267/13331736924_ed26816986_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/7267/13331736924_ed26816986_b.jpg" alt="wales" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">martin_ramsden licensed CC BY 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">Wales / Cymru</p></a>
+                <a href="{{ url_for('picturequiz', quizName='wales') }}"><p class="card-text text-center btn-outline-danger btn-lg">Wales</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -77,10 +72,10 @@
   
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/3192/2561053765_19e1715e9f_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/3192/2561053765_19e1715e9f_b.jpg" alt="castles wales" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">potamos.photography license CC BY-ND 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">Castles / Cestyll</p></a>
+                <a href="{{ url_for('picturequiz', quizName='castles') }}"><p class="card-text text-center btn-outline-danger btn-lg">Castles</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -91,10 +86,10 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/7295/8995899882_342b9a614e_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/7295/8995899882_342b9a614e_b.jpg" alt="welsh mountains" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">Mikey Bean license CC BY 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">Mountains / Mynyddoedd</p></a>
+                <a href="{{ url_for('picturequiz', quizName='mountains') }}"><p class="card-text text-center btn-outline-danger btn-lg">Mountains</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -105,10 +100,10 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/65535/32770650157_f6a98ecc88_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/65535/32770650157_f6a98ecc88_b.jpg" alt="welsh language" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">waddavies license CC0 1</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh / Cymraeg</p></a>
+                <a href="{{ url_for('tenquiz', quizName='welshNumbers') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -119,10 +114,10 @@
   
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="http://s0.geograph.org.uk/geophotos/01/18/18/1181860_a9dd45e8.jpg" width="100%" height="225">
+              <img src="http://s0.geograph.org.uk/geophotos/01/18/18/1181860_a9dd45e8.jpg" alt="welsh history" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">Chris Downer license CC BY-SA 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">History / Hanes</p></a>
+                <a href="{{ url_for('picturequiz', quizName='welshHistory') }}"><p class="card-text text-center btn-outline-danger btn-lg">History</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -133,10 +128,10 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/2011/2047752607_2a61f3356f_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/2011/2047752607_2a61f3356f_b.jpg" alt="welsh music" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">alterna2 license CC BY 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">Music / Cerddoriaeth</p></a>
+                <a href="{{ url_for('picturequiz', quizName='welshVenues') }}"><p class="card-text text-center btn-outline-danger btn-lg">Music</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group text-center">
                   </div>
@@ -147,10 +142,10 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img src="https://live.staticflickr.com/8026/7409542742_e17c7baa74_b.jpg" width="100%" height="225">
+              <img src="https://live.staticflickr.com/8026/7409542742_e17c7baa74_b.jpg" alt="north wales" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">Jim Linwood license CC BY 2</p>
               <div class="card-body">
-                <a href="{{ url_for('general') }}"><p class="card-text text-center btn-outline-danger btn-lg">North Wales / Gogledd Cymru</p></a>
+                <a href="{{ url_for('picturequiz', quizName='northWales') }}"><p class="card-text text-center btn-outline-danger btn-lg">North Wales</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
