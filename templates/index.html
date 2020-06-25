@@ -6,13 +6,13 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1>Croeso!</h1>
-        <p class="lead text-muted">Pick a topic or scroll down to get quizzing!</p>
+        <p class="lead text-center">Welcome to <b>welshquizzes.com</b>, the home of Welsh trivia online. Whether you're looking for quizzes about Wales' greatest castles, highest mountains, best music or most beautiful beaches, you'll find it all and more below. <p class="lead text-muted">Pick a topic or scroll down to get quizzing!</p>
           <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2 btn-lg">Culture</a>
           <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2 btn-lg">General Knowledge</a>
           <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2 btn-lg">History</a>
+          <a href="{{ url_for('geography') }}" class="btn btn-outline-success my-2 btn-lg">Geography</a>
           <a href="{{ url_for('jumbo') }}" class="btn btn-outline-success my-2 btn-lg">Jumbo Quizzes</a>
           <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Sport</a>
-          <a href="{{ url_for('history', _anchor='politics') }}" class="btn btn-outline-success my-2 btn-lg">Politics</a>
           <a href="{{ url_for('sport', _anchor='rugby') }}" class="btn btn-outline-success my-2 btn-lg">Rugby</a>
           <a href="{{ url_for('sport', _anchor='football') }}" class="btn btn-outline-success my-2 btn-lg">Football</a>
           <a href="{{ url_for('culture', _anchor='language') }}" class="btn btn-outline-success my-2 btn-lg">Language</a>
@@ -20,13 +20,13 @@
           <a href="{{ url_for('culture', _anchor='film') }}" class="btn btn-outline-success my-2 btn-lg">Film</a>
           <a href="{{ url_for('culture', _anchor='tv') }}" class="btn btn-outline-success my-2 btn-lg">TV</a>
           <a href="{{ url_for('culture', _anchor='music') }}" class="btn btn-outline-success my-2 btn-lg">Music</a>
-          <a href="{{ url_for('history', _anchor='quick') }}" class="btn btn-outline-success my-2 btn-lg">Quick Quizzes</a>
         </p>
       </div>
     </section>
   
     <div class="album py-5 bg-light">
-      <div class="container">
+      <div class="container text-center">
+        <h2>Latest Quizzes</h2>
   
         <div class="row">
           <div class="col-md-4">
@@ -36,6 +36,34 @@
                 <div class="card-body">
                   <a href="{{ url_for('picturequiz', quizName='beaches') }}"><p class="card-text text-center btn-outline-danger btn-lg">Beaches</p></a>
                   <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://live.staticflickr.com/65535/48381234032_e87ddb3aea_b.jpg" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;">cattan2011 license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('picturequiz', quizName='llTownsII') }}"><p class="card-text text-center btn-outline-danger btn-lg">Ll towns</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group text-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://live.staticflickr.com/5047/5260678452_e8fd282c95_b.jpg" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;">dave-pemcoastphotos.com license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('picturequiz2', quizName='aonb') }}"><p class="card-text text-center btn-outline-danger btn-lg">Guess the AONB</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group text-center">
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,10 +128,38 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <img src="https://live.staticflickr.com/8599/15966969495_ea3de02643_b.jpg" alt="edward I castles" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;">Bo&Ko license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('picturequiz', quizName='edwardI') }}"><p class="card-text text-center btn-outline-danger btn-lg">Edward I Castles</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
               <img src="https://live.staticflickr.com/65535/32770650157_f6a98ecc88_b.jpg" alt="welsh language" width="100%" height="225">
               <p class="text-right font-weight-light" style="color: darkgray;">waddavies license CC0 1</p>
               <div class="card-body">
                 <a href="{{ url_for('tenquiz', quizName='welshNumbers') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://farm8.staticflickr.com/7340/13993732949_86496aa82d_b.jpg" alt="welsh football" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;">Matthew Wilkinson license CC BY-ND 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('tenquiz', quizName='mostGoals') }}"><p class="card-text text-center btn-outline-danger btn-lg">Football: most goals</p></a>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                   </div>
@@ -139,6 +195,158 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://live.staticflickr.com/6231/6868542756_49807ca18a_b.jpg" alt="welsh rugby" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('tenquiz', quizName='mostTries') }}"><p class="card-text text-center btn-outline-danger btn-lg">Rugby: most tries</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://live.staticflickr.com/1005/5190204039_1806376ed3_b.jpg" alt="welsh rugby" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('tenquiz', quizName='mostPoints') }}"><p class="card-text text-center btn-outline-danger btn-lg">Rugby: most points</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Castel_y_Bere_site.jpg" alt="welsh built castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">Gareth James license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='welshCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh-built Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/8354/8354323485_f6922e7433_b.jpg" alt="norman castles wales" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">Nigel Swales license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='normanCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">Norman Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/3927/15511037862_2eaf640514_b.jpg" alt="south wales castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">pdeonarain license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='southWalesCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">South Wales Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/1832/29098731747_3dcd099b85_b.jpg" alt="north wales castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">mattbuck4950 license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='northWalesCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">North Wales Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/6054/6307702570_01bacab516_b.jpg" alt="south east wales castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">mellen_petrich license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='southEastCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">South East Wales Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/3661/3567260987_519a6d72b7.jpg" alt="mid wales castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">Simon Bunting license CC BY 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='midWalesCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">Mid Wales Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/3474/3318940752_48885e6815_b.jpg" alt="west wales castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">Disgwylfa licensed CC BY 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='westWalesCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">West Wales Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/2011/2047752607_2a61f3356f_b.jpg" alt="welsh music venues" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">alterna2 license CC BY 2</p>
+                  <div class="card-body">
+                    <a href="{{ url_for('picturequiz', quizName='welshVenues') }}"><p class="card-text text-center btn-outline-danger btn-lg">Music venues</p></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/2910/14154926029_c4510febfe_b.jpg" alt="welsh castle" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">J.B_Photography license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='welshNouns') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Nouns</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">

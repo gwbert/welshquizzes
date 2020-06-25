@@ -1,0 +1,349 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+  .text-right {
+    font-size: small;
+  }
+  .lead {
+    padding-top: 15px;
+  }
+</style>
+    
+    <div class="container text-center">
+      <p class="lead text-muted">{{ myObject.description|e }}</p>
+    </div>
+    
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[0] }}" alt="welshquizzes.com picture quiz image 1" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[0]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[1] }}" alt="welshquizzes.com picture quiz image 2" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[1]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q2">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[2] }}" alt="welshquizzes.com picture quiz image 3" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[2]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q3">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[3] }}" alt="welshquizzes.com picture quiz image 4" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[3]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q4">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[4] }}" alt="welshquizzes.com picture quiz image 5" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[4]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q5">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[5] }}" alt="welshquizzes.com picture quiz image 6" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[5]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q6">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[6] }}" alt="welshquizzes.com picture quiz image 7" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[6]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[7] }}" alt="welshquizzes.com picture quiz image 8" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[7]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q2">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[8] }}" alt="welshquizzes.com picture quiz image 9" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[8]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q3">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[9] }}" alt="welshquizzes.com picture quiz image 10" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[9]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q4">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[10] }}" alt="welshquizzes.com picture quiz image 11" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[10]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q5">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{{ myObject.questions[11] }}" alt="welshquizzes.com picture quiz image 12" width="350" height="225">
+              <p class="text-right" style="color: darkgray;">{{ myObject.credits[11]|e }}</p>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <label for="answer" class="col-form-label font-weight-bold">Answer:</label>
+                      <input type="text" class="form-control" id="q6">                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="container text-center">
+          <button class="btn btn-primary" type="submit" onclick="myFunction()">Submit</button>
+          <button class="btn btn-secondary" type="submit" onclick="revealFunction()">Reveal</button>
+          <hr>
+          <p id="reveal"></p>
+          <p id="score"></p>
+          <p></p>
+        </div>
+  
+  
+    <script>
+  
+      function myFunction() {
+      var input1 = document.getElementById("q1").value;
+      var input2 = document.getElementById("q2").value; 
+      var input3 = document.getElementById("q3").value; 
+      var input4 = document.getElementById("q4").value; 
+      var input5 = document.getElementById("q5").value;
+      var input6 = document.getElementById("q6").value;
+      var input7 = document.getElementById("q7").value;
+      var input8 = document.getElementById("q8").value; 
+      var input9 = document.getElementById("q9").value; 
+      var input10 = document.getElementById("q10").value; 
+      var input11 = document.getElementById("q11").value;
+      var input12 = document.getElementById("q12").value;
+      var answer1 = "{{ myObject.answers[0]|e }}";
+      var answer2 = "{{ myObject.answers[1]|e }}";
+      var answer3 = "{{ myObject.answers[2]|e }}";
+      var answer4 = "{{ myObject.answers[3]|e }}";
+      var answer5 = "{{ myObject.answers[4]|e }}";
+      var answer6 = "{{ myObject.answers[5]|e }}";
+      var answer1 = "{{ myObject.answers[6]|e }}";
+      var answer2 = "{{ myObject.answers[7]|e }}";
+      var answer3 = "{{ myObject.answers[8]|e }}";
+      var answer4 = "{{ myObject.answers[9]|e }}";
+      var answer5 = "{{ myObject.answers[10]|e }}";
+      var answer6 = "{{ myObject.answers[11]|e }}";
+      var counter = 0;
+      if (input1.toLowerCase() === answer1) {
+          counter ++;
+          document.getElementById("q1").style.borderColor = "green";
+      } else {
+          document.getElementById("q1").style.borderColor = "red";
+      }
+      if (input2.toLowerCase() === answer2) {
+          counter ++;
+          document.getElementById("q2").style.borderColor = "green";
+      } else {
+          document.getElementById("q2").style.borderColor = "red";
+      }
+      if (input3.toLowerCase() === answer3) {
+          counter ++;
+          document.getElementById("q3").style.borderColor = "green";
+      } else {
+          document.getElementById("q3").style.borderColor = "red";
+      }
+      if (input4.toLowerCase() === answer4) {
+          counter ++;
+          document.getElementById("q4").style.borderColor = "green";
+      } else {
+          document.getElementById("q4").style.borderColor = "red";
+      }
+      if (input5.toLowerCase() === answer5) {
+          counter ++;
+          document.getElementById("q5").style.borderColor = "green";
+      } else {
+          document.getElementById("q5").style.borderColor = "red";
+      }
+      if (input6.toLowerCase() === answer6) {
+          counter ++;
+          document.getElementById("q6").style.borderColor = "green";
+      } else {
+          document.getElementById("q6").style.borderColor = "red";
+      }
+      if (input7.toLowerCase() === answer7) {
+          counter ++;
+          document.getElementById("q7").style.borderColor = "green";
+      } else {
+          document.getElementById("q7").style.borderColor = "red";
+      }
+      if (input8.toLowerCase() === answer8) {
+          counter ++;
+          document.getElementById("q8").style.borderColor = "green";
+      } else {
+          document.getElementById("q8").style.borderColor = "red";
+      }
+      if (input9.toLowerCase() === answer9) {
+          counter ++;
+          document.getElementById("q9").style.borderColor = "green";
+      } else {
+          document.getElementById("q9").style.borderColor = "red";
+      }
+      if (input10.toLowerCase() === answer10) {
+          counter ++;
+          document.getElementById("q10").style.borderColor = "green";
+      } else {
+          document.getElementById("q10").style.borderColor = "red";
+      }
+      if (input11.toLowerCase() === answer11) {
+          counter ++;
+          document.getElementById("q11").style.borderColor = "green";
+      } else {
+          document.getElementById("q11").style.borderColor = "red";
+      }
+      if (input12.toLowerCase() === answer12) {
+          counter ++;
+          document.getElementById("q12").style.borderColor = "green";
+      } else {
+          document.getElementById("q12").style.borderColor = "red";
+      }
+      document.getElementById("score").innerHTML = "You scored " + counter + " out of 12!";
+  }
+  
+  function revealFunction() {
+  var reveal1 = document.getElementById("q1");
+  reveal1.value = "{{ myObject.answers[0]|e }}";
+  reveal1.value = reveal1.value.charAt(0).toUpperCase() + reveal1.value.slice(1)
+  var reveal2 = document.getElementById("q2");
+  reveal2.value = "{{ myObject.answers[1]|e }}";
+  reveal2.value = reveal2.value.charAt(0).toUpperCase() + reveal2.value.slice(1)
+  var reveal3 = document.getElementById("q3");
+  reveal3.value = "{{ myObject.answers[2]|e }}";
+  reveal3.value = reveal3.value.charAt(0).toUpperCase() + reveal3.value.slice(1)
+  var reveal4 = document.getElementById("q4");
+  reveal4.value = "{{ myObject.answers[3]|e }}";
+  reveal4.value = reveal4.value.charAt(0).toUpperCase() + reveal4.value.slice(1)
+  var reveal5 = document.getElementById("q5");
+  reveal5.value = "{{ myObject.answers[4]|e }}";
+  reveal5.value = reveal5.value.charAt(0).toUpperCase() + reveal5.value.slice(1)
+  var reveal6 = document.getElementById("q6");
+  reveal6.value = "{{ myObject.answers[5]|e }}";
+  reveal6.value = reveal6.value.charAt(0).toUpperCase() + reveal6.value.slice(1)
+  var reveal7 = document.getElementById("q7");
+  reveal7.value = "{{ myObject.answers[6]|e }}";
+  reveal7.value = reveal7.value.charAt(0).toUpperCase() + reveal7.value.slice(1)
+  var reveal8 = document.getElementById("q8");
+  reveal8.value = "{{ myObject.answers[7]|e }}";
+  reveal8.value = reveal8.value.charAt(0).toUpperCase() + reveal8.value.slice(1)
+  var reveal9 = document.getElementById("q9");
+  reveal9.value = "{{ myObject.answers[8]|e }}";
+  reveal9.value = reveal9.value.charAt(0).toUpperCase() + reveal9.value.slice(1)
+  var reveal10 = document.getElementById("q10");
+  reveal10.value = "{{ myObject.answers[9]|e }}";
+  reveal10.value = reveal10.value.charAt(0).toUpperCase() + reveal10.value.slice(1)
+  var reveal11 = document.getElementById("q11");
+  reveal11.value = "{{ myObject.answers[10]|e }}";
+  reveal11.value = reveal11.value.charAt(0).toUpperCase() + reveal11.value.slice(1)
+  var reveal12 = document.getElementById("q12");
+  reveal12.value = "{{ myObject.answers[11]|e }}";
+  reveal612.value = reveal12.value.charAt(0).toUpperCase() + reveal12.value.slice(1)
+  }
+  
+  </script>
+  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+          {% endblock %}

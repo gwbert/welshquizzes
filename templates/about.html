@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    p {
+        text-align: justify;
+    }
+</style>
+
+<div class="container text-center">
+  <h1 class="mt-5">About</h1>
+</div>
+
+<main role="main" class="flex-shrink-0">
+    <div class="container">
+      <h1 class="mt-5">The Idea</h1>
+      <p class="lead">The idea behind welshquizzes.com is simple: an accessible, user-friendly and responsive website solely dedicated to quizzes on the beautiful country of Wales. The idea was to quickly build a prototype of the website which covered all the quiz genres in a small amount of detail and then build on that content based on user feedback and sugegstions. Having lived all over Wales I had been looking for somehwere to explore the nation via quizzes and the only things I could find were small sections of quizzes on Wales e.g. at Sporcle or individual quizzes by visitwales or wales online. The idea was to fix that. welshquizzes.com was the result, providing a comprehensive Welsh quiz website where people can explore the beautiful nation of Wales through quizzes. Like rugby? There's a quiz for that. Like Snowdonia? Then there's a quiz for that. Castles your thing? Then try this quiz. Whilst this website will never be exhaustive, it will hopefully at least be representative.</p>
+      <h1 class="mt-5">The Site</h1>
+      <p class="lead">welshquizzes.com is divided by quiz sections - History, General, Culture - similar to its sister site weequiz.com. Within each section there are different quizzes from picture quizzes and jumbo quizzes to top tens - hopefully allowing each user to choose a quiz format they enjoy. Picture quizzes are perhaps the main component, demonstrating how beautiful Wales really is with other quizzes continuously being added when time allows. If you'd like to see a new type or quiz or a new section then get in contact.</p>
+      <h1 class="mt-5">The Team</h1>
+      <p class="lead">welshquizzes.com is a small team, composing of Alex - the main coder - and a bunch of testers who are anyone Alex can call on for a favour. Thanks guys! It is to be hoped that I can expand the team with time...</p>
+      <h1 class="mt-5">The Technology</h1>
+      <p class="lead">welshquizzes.com is built in Python, using the Flask micro web framework. I investigated Bottle and Django for the project but thought that Flask offered the right level of web framework for what I was trying to achieve, whilst having a huge number of great resources - particularly Miguel Grinbergs website and book. The code is written in VSCode and tested locally using the development server, before being pushed to Github and pulled through to Azure, where the web app is hosted. I tested all three main cloud providers - AWS, GCP and Azure - and found them all similar, but chose Azure due to a combination of factors (free SSL binding, site worked well under the free tier, good documentation). Bootstrap is used to give the site a clear cohesive structure and design, whilst Javascript is used for the pointy stuff.</p>
+      <h1 class="mt-5">The Future</h1>
+      <p class="lead">Through user suggestions and my own learning the intent is to continuously improve and expand the site, building towards being the main website for welsh quizzes on the internet. There's a huge range of things I want to add to the website but what I'd really welcome is user suggestions. So get in contact! Whether it's feedback, errata or anything else, don't hesitate to send me a message. If I implement the change you request I'll credit you (if desired) on this page.</p>
+    </div>
+  </main>
+
+{% endblock %}

@@ -4,6 +4,7 @@
 <section class="jumbotron text-center">
     <div class="container">
       <h1>History / Hanes</h1>
+      <p class="lead">It is said that there are more <b>castles per square mile</b> in Wales than anywhere else in the world. And you'd better believe it. Whether it's the <b>iron ring of Edward I</b> in North Wales or the earlier <b>Norman castles</b> in South Wales, this celtic country is steeped in history waiting to be explored.</p>
       <p class="lead text-muted">Pick a topic or scroll down to start quizzing!</p>
       <a href="#castles" class="btn btn-outline-success my-2">Castles</a>
         <a href="#history" class="btn btn-outline-success my-2">General History</a>
@@ -124,6 +125,18 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/1857/44514124661_921a49b5d7_b.jpg" alt="Edward I iron ring of castles" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">mcartmell license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('tenquiz', quizName='ironRing') }}"><p class="card-text text-center btn-outline-danger btn-lg">Iron Ring Castles</p></a>
+                <div class="d-flex justify-content-between align-items-center">
               </div>
             </div>
           </div>
@@ -344,8 +357,36 @@
 
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
+                <img src="https://live.staticflickr.com/1867/29806789647_a51a58d850_b.jpg" alt="north east wales castles" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">clairemcox license CC BY-ND 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='northEastWalesCastles') }}"><p class="card-text text-center btn-outline-danger btn-lg">North East Wales Castles</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="https://s0.geograph.org.uk/geophotos/05/02/50/5025045_f88f2485.jpg" alt="historic north wales quiz" width="100%" height="225">
+                <p class="text-right font-weight-light" style="color: darkgray;">Jeff Buck license CC BY-SA 2</p>
+                <div class="card-body">
+                  <a href="{{ url_for('picturequiz', quizName='historicNWales') }}"><p class="card-text text-center btn-outline-danger btn-lg">Historic North Wales</p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
                 <img src="https://live.staticflickr.com/2317/2268016077_fe76615b94_b.jpg" alt="modern history cardiff" width="100%" height="225">
-                <p class="text-right font-weight-light" style="color: darkgray;"></p>
+                <p class="text-right font-weight-light" style="color: darkgray;">Nigel Swales license CC BY-SA 2</p>
                 <div class="card-body">
                   <a href="{{ url_for('picturequiz', quizName='modernCardiff') }}"><p class="card-text text-center btn-outline-danger btn-lg">Modern History: Cardiff</p></a>
                   <div class="d-flex justify-content-between align-items-center">

@@ -4,17 +4,112 @@
 <section class="jumbotron text-center">
     <div class="container">
       <h1>Jumbo Quizzes / Cwisiau Jumbo</h1>
-      <p class="lead text-muted">Pick a topic or scroll down to start quizzing!</p>
-        <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2">Jumbo Culture</a>
-        <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2">Jumbo General Knowledge</a>
-        <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2">Jumbo History</a>
-        <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2">Jumbo Sport</a>
-      </p>
+      <p class="lead">Ranging from relatively easy to fiendishly difficult these jumbo Welsh quizzes should keep you going for a while. Just trying to spell - <b>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</b> - is hard enough!</p>
+      <p class="lead text-muted">Scroll down to start quizzing!</p>
+      <a href="#twenty" class="btn btn-outline-success my-2">Top 20s</a>
+      <a href="#thirty" class="btn btn-outline-success my-2">Top 30s</a>
+      <a href="#jumbopicture" class="btn btn-outline-success my-2">Jumbo Picture Quizzes</a>
     </div>
   </section>
 
+  <a name="twenty"></a>
   <div class="album py-5 bg-light">
     <div class="container text-center">
+      <h2>Top 20s</h2>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="http://s0.geograph.org.uk/geophotos/04/17/12/4171268_46b05845.jpg" width="100%" alt="highest mountains in wales" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Ian Medcalf license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('twentyquiz', quizName='mountains20') }}"><p class="card-text text-center btn-outline-danger btn-lg">20 Highest Mountains</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://s0.geograph.org.uk/geophotos/03/27/92/3279267_f0ae74ab.jpg" alt="largest stadums in wales" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Robin Drayton license CC BY-SA 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('twentyquiz', quizName='stadiums') }}"><p class="card-text text-center btn-outline-danger btn-lg">20 Biggest Stadiums</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8249/8501688730_4f1d80695b_b.jpg" alt="busiest stations in wales" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">hugh llewelyn license CC BY-SA 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('twentyquiz', quizName='busyStations') }}"><p class="card-text text-center btn-outline-danger btn-lg">20 Busiest Stations</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/1115/5105215262_72f3fd3c5a_b.jpg" alt="largest towns in wales" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('twentyquiz', quizName='places20') }}"><p class="card-text text-center btn-outline-danger btn-lg">20 Largest Towns</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8474/8138235613_4d3cd98a8d_b.jpg" alt="most common welsh surnames" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Jonathan Stonehouse license CC BY 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('twentyquiz', quizName=twentySurnames) }}"><p class="card-text text-center btn-outline-danger btn-lg">20 Most Common Surnames</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch_stationbord.JPG" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Rob Koster license CC BY-SA 3</p>
+            <div class="card-body">
+              <a href="{{ url_for('twentyquiz', quizName='llTowns') }}"><p class="card-text text-center btn-outline-danger btn-lg">Towns starting with Ll</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a name="thirty"></a>
+  <div class="album py-5 bg-light">
+    <div class="container text-center">
+      <h2>Top 30s</h2>
+      <hr>
 
   <div class="row">
     <div class="col-md-4">
@@ -59,6 +154,97 @@
       </div>
     </div>
     </div>
+
+    <a name="jumbopicture"></a>
+    <div class="album py-5 bg-light">
+      <div class="container text-center">
+        <h2>Jumbo Picture Quizzes</h2>
+        <hr>
+  
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="" width="100%" alt="" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;"></p>
+                <div class="card-body">
+                  <a href="{{ url_for('twentyquiz', quizName='') }}"><p class="card-text text-center btn-outline-danger btn-lg"></p></a>
+                  <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="" alt="" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;"></p>
+              <div class="card-body">
+                <a href="{{ url_for('twentyquiz', quizName='') }}"><p class="card-text text-center btn-outline-danger btn-lg"></p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="" alt="" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;"></p>
+              <div class="card-body">
+                <a href="{{ url_for('twentyquiz', quizName='') }}"><p class="card-text text-center btn-outline-danger btn-lg"></p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="" alt="" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;"></p>
+              <div class="card-body">
+                <a href="{{ url_for('twentyquiz', quizName='') }}"><p class="card-text text-center btn-outline-danger btn-lg"></p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="" alt="" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;"></p>
+              <div class="card-body">
+                <a href="{{ url_for('twentyquiz', quizName='') }}"><p class="card-text text-center btn-outline-danger btn-lg"></p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="" alt="" width="100%" height="225">
+              <p class="text-right font-weight-light" style="color: darkgray;"></p>
+              <div class="card-body">
+                <a href="{{ url_for('twentyquiz', quizName='') }}"><p class="card-text text-center btn-outline-danger btn-lg"></p></a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
 
   <footer class="text-muted">
     <div class="container text-center">

@@ -9,9 +9,25 @@ bootstrap = Bootstrap(app)
 def index():
     return render_template('index.html')
 
-@app.route("/index2")
-def index2():
-    return render_template('index2.html')
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+@app.route("/email")
+def email():
+    return render_template('email.html')
+
+@app.route("/errata")
+def errata():
+    return render_template('errata.html')
+
+@app.route("/blog")
+def blog():
+    return render_template('blog.html')
+
+@app.route("/suggest")
+def suggest():
+    return render_template('suggest.html')
 
 @app.route("/culture")
 def culture():
@@ -24,6 +40,10 @@ def general():
 @app.route("/history")
 def history():
     return render_template('history.html')
+
+@app.route("/geography")
+def geography():
+    return render_template('geography.html')
 
 @app.route("/jumbo")
 def jumbo():
@@ -38,6 +58,12 @@ def picturequiz(quizName):
     import quizzes
     myObject = getattr(quizzes, quizName)
     return render_template('picturequiz.html', myObject=myObject)
+
+@app.route("/jumbopicturequiz/<quizName>")
+def jumbopicturequiz(quizName):
+    import quizzes
+    myObject = getattr(quizzes, quizName)
+    return render_template('jumbopicturequiz.html', myObject=myObject)
 
 @app.route("/picturequiz2/<quizName>")
 def picturequiz2(quizName):
@@ -56,6 +82,12 @@ def tenquiz(quizName):
     import quizzes
     myObject = getattr(quizzes, quizName)
     return render_template('tenquiz.html', myObject=myObject)
+
+@app.route("/elevenquiz/<quizName>")
+def elevenquiz(quizName):
+    import quizzes
+    myObject = getattr(quizzes, quizName)
+    return render_template('elevenquiz.html', myObject=myObject)
 
 @app.route("/twentyquiz/<quizName>")
 def twentyquiz(quizName):
