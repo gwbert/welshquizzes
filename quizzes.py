@@ -18,7 +18,7 @@ class pictureQuiz2:
 
 ## 12 pictures, 12 questions, 12 answers
 class jumbopictureQuiz:
-    def __init__(self, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c1, c12, headline, description):
+    def __init__(self, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, headline, description):
         self.questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12]
         self.answers = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12]
         self.credits = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12]
