@@ -25,6 +25,20 @@ class jumbopictureQuiz:
         self.headline = headline
         self.description = description
 
+class smallQuiz:
+    def __init__(self, q1, q2, q3, q4, q5, a1, a2, a3, a4, a5, headline, description):
+        self.questions = [q1, q2, q3, q4, q5]
+        self.answers = [a1, a2, a3, a4, a5]
+        self.headline = headline
+        self.description = description
+
+class mediumQuiz:
+    def __init__(self, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, headline, description):
+        self.questions = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10]
+        self.answers = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10]
+        self.headline = headline
+        self.description = description
+
 class flexQuiz:
     def __init__(self, *args, headline, description):
         self.answers = args
@@ -97,6 +111,10 @@ wordGetsAround = flexQuiz("a thousand trees", "looks like chaplin", "more life i
 designForLife = flexQuiz("libraries", "gave", "us", "power", "then", "work", "came", "and", "made", "us", headline="Design for Life: lyrics", description="Can you name the first ten lyrics from the Manics number two single: A design for life?")
 coolCymru = flexQuiz("manic street preachers", "stereophonics", "goldie lookin chain", "super furry animals", "feeder", "gorkys zygotic monkey", "60ft dolls", "lostprophets", "funeral for a friend", "melys", headline="Cool Cymru", description="Can you name the generation of lush Welsh bands that made up Cool Cymru movement?")
 superFurrySingles = flexQuiz("something 4 the weekend", "if you dont want me to destroy you", "the man don't give a fuck", "hermann loves pauline", "the international language of screaming", "play it cool", "demons", "northern lites", "fire in my heart", "do or die", "juxtaposed with u", "rings around the world", "golden retriever", "the man dont give a fuck", "lazer beam", headline="Super Furries top 30 singles", description="It's not the end of the world made it to number 30 in the UK singles chart in 2002, but which Super Furries songs - from 1996 to 2005 - made it inside the top 30?")
+mulderScully = flexQuiz("id", "rather", "be", "liberated", "i", "find", "myself", "captivated", "stop", "doing", "what", "you", "keep", "doing", "it", "to", "id", "rather", "stay", "bold", headline="Mulder & Scully: lyrics", description="Mulder & Scully - released in January 1998 - scored Catatonia's first top 5 single, but do you know the first twenty lyrics?")
+nameTheActors = smallQuiz("MRK LWS JNS", "JLN LWS JNS", "RTH JNS", "TRRY JNS", "CTHRN ZT-JNS", "mark lewis jones", "julian lewis jones", "ruth jones", "terry jones", "catherine zeta-jones", headline="Welsh Actors", description="Can you name these Welsh actors and the not-so-secret thread that unites them all?")
+nameTheActorII = smallQuiz("IN GRFD", "KMBRLY NXN", "RCHRD HRNGTN", "MTHW GRVL", "JN PG", "ioan gruffudd", "kimberley nixon", "richard harrington", "matthew gravelle", "joanna page", headline="Welsh Actors", description="Can you name these currently-active talented Welsh actors?")
+actorsCymraeg = mediumQuiz("RHY IFNS", "MRK LWS JNS", "RCHRD HRNGTN", "MLI HRIS", "IN GRFD", "MTHW RHY", "IWN RHN", "JNTHN PRYC", "MTHW GRVL", "LXNDR RCH", "rhys ifans", "mark lewis jones", "richard harrington", "mali harries", "ioan gruffudd", "matthew rhys", "iwan rheon", "jonathan pryce", "matthew gravelle", "alexandra roach", headline="Welsh-speaking Actors", description="Can you name these Welsh-speaking actors?")
 
 ## HISTORY
 welshHistory = pictureQuiz("https://upload.wikimedia.org/wikipedia/commons/f/f7/Caerleon_Roman_Fortress_20171016_Prysg_Field_Barracks.jpg", "https://live.staticflickr.com/8026/7409542742_e17c7baa74_b.jpg", "https://live.staticflickr.com/3291/2656609705_dbf714f1c5_b.jpg", "https://live.staticflickr.com/3192/2788321355_8ab7d811c7_b.jpg", "https://s0.geograph.org.uk/geophotos/01/05/78/1057882_cb54eb0b.jpg", "https://live.staticflickr.com/1935/43122237270_5561078e08_b.jpg", "caerleon", "britannia bridge", "strata florida abbey", "big pit", "cyfarthfa castle", "pontcysyllte aqueduct", "Otter license CC BY-SA 4", "Jim Linwood license CC BY 2", "mattbuck4950 license CC BY-SA 2", "espinr license CC BY 2", "John Wilson license CC BY-SA 2", "damo1977 license CC BY 2.0", headline="Welsh history", description="Can you name these Welsh historical landmarks?")

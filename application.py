@@ -77,6 +77,18 @@ def fivequiz(quizName):
     myObject = getattr(quizzes, quizName)
     return render_template('fivequiz.html', myObject=myObject)
 
+@app.route("/smallquiz/<quizName>")
+def smallquiz(quizName):
+    import quizzes
+    myObject = getattr(quizzes, quizName)
+    return render_template('smallquiz.html', myObject=myObject)
+
+@app.route("/mediumquiz/<quizName>")
+def mediumquiz(quizName):
+    import quizzes
+    myObject = getattr(quizzes, quizName)
+    return render_template('mediumquiz.html', myObject=myObject)
+
 @app.route("/tenquiz/<quizName>")
 def tenquiz(quizName):
     import quizzes
