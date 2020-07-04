@@ -10,9 +10,11 @@
   }
 </style>
     
-    <div class="container text-center">
-      <p class="lead text-muted">{{ myObject.description|e }}</p>
-    </div>
+<main role="main" class="container text-center">
+  <div class="jumbotron">
+    <h1>{{ myObject.headline|e }}</h1>
+    <p class="lead">{{ myObject.description|e }}</p>
+</div>
     
     <div class="album py-5 bg-light">
       <div class="container">
@@ -197,6 +199,28 @@
           <p id="score"></p>
           <p></p>
         </div>
+
+        <section class="jumbotron text-center">
+          <div class="container">
+              <h4>Select another topic</h4>
+              <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2 btn-lg">Culture</a>
+              <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2 btn-lg">General Knowledge</a>
+              <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2 btn-lg">History</a>
+              <a href="{{ url_for('geography') }}" class="btn btn-outline-success my-2 btn-lg">Geography</a>
+              <a href="{{ url_for('jumbo') }}" class="btn btn-outline-success my-2 btn-lg">Jumbo Quizzes</a>
+              <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Sport</a>
+              <a href="{{ url_for('transport') }}" class="btn btn-outline-success my-2 btn-lg">Transport</a>
+              <a href="{{ url_for('sport', _anchor='rugby') }}" class="btn btn-outline-success my-2 btn-lg">Rugby</a>
+              <a href="{{ url_for('sport', _anchor='football') }}" class="btn btn-outline-success my-2 btn-lg">Football</a>
+              <a href="{{ url_for('culture', _anchor='language') }}" class="btn btn-outline-success my-2 btn-lg">Language</a>
+              <a href="{{ url_for('culture', _anchor='literature') }}" class="btn btn-outline-success my-2 btn-lg">Literature</a>
+              <a href="{{ url_for('culture', _anchor='film') }}" class="btn btn-outline-success my-2 btn-lg">Film</a>
+              <a href="{{ url_for('culture', _anchor='tv') }}" class="btn btn-outline-success my-2 btn-lg">TV</a>
+              <a href="{{ url_for('culture', _anchor='music') }}" class="btn btn-outline-success my-2 btn-lg">Music</a>
+            </p>
+          </div>
+        </section>
+      
   
   
     <script>

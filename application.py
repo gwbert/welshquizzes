@@ -45,6 +45,10 @@ def history():
 def geography():
     return render_template('geography.html')
 
+@app.route("/transport")
+def transport():
+    return render_template('transport.html')
+
 @app.route("/jumbo")
 def jumbo():
     return render_template('jumbo.html')
