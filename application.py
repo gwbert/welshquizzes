@@ -25,6 +25,16 @@ def errata():
 def blog():
     return render_template('blog.html')
 
+@app.route("/blog/<blogName>")
+def blogentry(blogName):
+    import blog
+    myObject = getattr(blog, blogName)
+    return render_template('blog.html', myObject=myObject)
+
+@app.route("/blog2")
+def blog2():
+    return render_template('blog2.html')
+
 @app.route("/suggest")
 def suggest():
     return render_template('suggest.html')
@@ -32,6 +42,10 @@ def suggest():
 @app.route("/culture")
 def culture():
     return render_template('culture.html')
+
+@app.route("/regions")
+def regions():
+    return render_template('regions.html')
 
 @app.route("/general")
 def general():
