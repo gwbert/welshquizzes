@@ -39,7 +39,7 @@
    <div class="col-md-7 order-md-2">
      <h2 class="featurette-heading">Wales: <span class="text-muted">Land of the castle.</span></h2>
      <p class="lead">With more castles per square km than any another country on earth, Wales is the perfect place to explore the fortifications of times gone by. Whether its Norman castles, White castles, Welsh castles or Private castles, read this blog to find out all you need to know.</p>
-     <button type="button" class="btn btn-outline-primary">Continue reading</button>
+     <a href="{{ url_for('blogentry', blogName='landOfTheCastle') }}"><button type="button" class="btn btn-outline-primary">Continue reading</button></a>
    </div>
    <div class="col-md-5 order-md-1">
    <img src="https://live.staticflickr.com/3040/2641555563_6d93719793_b.jpg" alt="welsh castle" class="img-fluid" width="500" height="500">
@@ -51,9 +51,9 @@
 
  <div class="row featurette">
    <div class="col-md-7">
-     <h2 class="featurette-heading">M4: <span class="text-muted">Wales' Motorway.</span></h2>
-     <p class="lead">From the stunning spans of the two Severn Bridges to the complete inadequacy of the Brynglas tunnels, the M4 dominates south Wales like no other piece of infrastructure. Learn more about this vital cog in this blog entry.</p>
-     <button type="button" class="btn btn-outline-primary">Continue reading</button>
+     <h2 class="featurette-heading">M4: <span class="text-muted">Severn Bridges.</span></h2>
+     <p class="lead">Two majestic pieces of civil engineering spanning the Severn between England and Wales, these bridges dominate the local landscape and form a perfect way to enter into Wales. Read more about their history and importance in this blog entry.</p>
+     <a href="{{ url_for('blogentry', blogName='m4') }}"><button type="button" class="btn btn-outline-primary">Continue reading</button></a>
    </div>
    <div class="col-md-5">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Severn_Bridge_-_panoramio.jpg" class="img-fluid" alt="severn bridge" width="500" height="500">

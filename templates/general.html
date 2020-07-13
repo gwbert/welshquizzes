@@ -6,6 +6,7 @@
       <h1>General Knowledge / Gwybodaeth Gyffredinol</h1>
       <p class="lead">For a country of only just under 3 million inhabitants, you'd think there was little to know about Wales. But you'd be wrong. From the high peaks of <b>Snowdonia</b> to the longest river in the UK, <b>the Severn</b>, there is so much to learn and love about the beautiful country of Wales.</p>
       <p class="lead text-muted">Pick a topic or scroll down to start quizzing!</p>
+      <a href="#quick" class="btn btn-outline-success my-2">Quick Quizzes</a>
         <a href="#ten" class="btn btn-outline-success my-2">Top 10s</a>
         <a href="#twenty" class="btn btn-outline-success my-2">Top 20s</a>
         <a href="#thirty" class="btn btn-outline-success my-2">Top 30s</a>
@@ -13,6 +14,478 @@
       </p>
     </div>
   </section>
+
+  <a name="quick"></a>
+  <div class="album py-5 bg-light">
+    <div class="container text-center">
+      <h2>Quick Quizzes</h2>
+      <p class="lead">From the super easy Welsh Top Five through to the deliciously difficult England or Wales quiz, test your knowledge of Welsh General Knowledge in these quick quizzes.</p>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/117/297635244_80abc02c56_b.jpg" alt="welsh easy top five general knowledge quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">The Ancient Brit license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='welshTopFiveEasy') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Top Five: easy</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/7551/15766754752_f4a518c6bc_b.jpg" alt="welsh hard top five general knowledge quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Suzanne Gielis license CC BY-ND 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='welshTopFiveHard') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Top Five: hard</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/4364/36447334486_3bd2c40f51_b.jpg" alt="welsh fiendish top five general knowledge quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">sctkirk license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='welshTopFiveFiendish') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Top Five: fiendish</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8015/7261741794_7f6aaf3137_b.jpg" alt="welsh placenames quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">John McLinden license CC BY-ND 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('mediumquiz', quizName='welshPlacenames') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Placenames</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://s0.geograph.org.uk/geophotos/05/57/43/5574351_edaa95da.jpg" alt="England or Wales quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Jeff Buck license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('mediumquiz', quizName='englandOrWales') }}"><p class="card-text text-center btn-outline-danger btn-lg">England or Wales?</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Inside_the_Brynglas_Tunnels_-_2079478_8776df14.jpg" alt="M4 quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">J Whatley license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='m4') }}"><p class="card-text text-center btn-outline-danger btn-lg">M4 Quiz</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/2754/5708164292_48106be390_b.jpg" alt="Highest five mountains in wales" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">nathanrjones1979 license CC BY-SA 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('fivequiz', quizName='fiveMountains') }}"><p class="card-text text-center btn-outline-danger btn-lg">Five Highest Mountains</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/65535/32770650157_f6a98ecc88_b.jpg" alt="welsh numbers" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">waddavies license CC0 1</p>
+            <div class="card-body">
+              <a href="{{ url_for('tenquiz', quizName='welshNumbers') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Numbers: 1-10</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8821/27942340660_1e76281094_b.jpg" alt="welsh places quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Reading Tom license CC BY 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('picturequiz', quizName='welshPlaces') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Places</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="http://s0.geograph.org.uk/photos/34/81/348166_e20d5113.jpg" alt="" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">idris license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='welshRugby') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh Rugby</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8454/8032381020_7cf0413782_b.jpg" alt="five longest rivers in wales" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">@HfdsCouncil license CC BY-ND 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('fivequiz', quizName='fiveRivers') }}"><p class="card-text text-center btn-outline-danger btn-lg">Five Longest Rivers</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8148/7643363984_bff6a979e9_b.jpg" alt="Wales euro 2016 quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('smallquiz', quizName='euro2016') }}"><p class="card-text text-center btn-outline-danger btn-lg">Wales: Euro 2016</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/South_Stack_Lighthouse%2C_Anglesey.jpg" alt="largest islands in Wales" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Peter_Glyn license CC BY-SA 3</p>
+            <div class="card-body">
+              <a href="{{ url_for('fivequiz', quizName='fiveIslands') }}"><p class="card-text text-center btn-outline-danger btn-lg">Five Largest Islands</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8306/7788970424_629b8296ea_b.jpg" alt="easy welsh music quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Leshaines123 license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='musicEasy') }}"><p class="card-text text-center btn-outline-danger btn-lg">Welsh music: easy</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/7409/8853926714_a2b9d0389c_b.jpg" alt="blaenau gwent quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">fromthevalleys- license CC BY-ND 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalBlaenauGwent') }}"><p class="card-text text-center btn-outline-danger btn-lg">Blaenau Gwent</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/5242/5338421485_fe66b529b2_b.jpg" alt="bridgend quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Mooganic license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalBridgend') }}"><p class="card-text text-center btn-outline-danger btn-lg">Bridgend</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/3939/15488238706_e076689fcd_b.jpg" alt="caerphilly quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">pdeonarain license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalCaerphilly') }}"><p class="card-text text-center btn-outline-danger btn-lg">Caerphilly</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Cardiff_Castle_4_%2816947558770%29.jpg" alt="cardiff quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Tony Hisgett Birmingham, UK license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalCardiff') }}"><p class="card-text text-center btn-outline-danger btn-lg">Cardiff</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/3297/3185060484_2fcc225985_b.jpg" alt="carmarthenshire quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Dave Hamster license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalCarmarthenshire') }}"><p class="card-text text-center btn-outline-danger btn-lg">Carmarthenshire</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/5322/29992181443_17a3ab49da_b.jpg" alt="ceredigion quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">dolbinator1000 license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalCeredigion') }}"><p class="card-text text-center btn-outline-danger btn-lg">Ceredigion</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/65535/48149655226_7d254e26c7_b.jpg" alt="newport quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">GerryF-Brizzle license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalNewport') }}"><p class="card-text text-center btn-outline-danger btn-lg">City of Newport</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/7392/10281372026_cfc9840de5_b.jpg" alt="conwy quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">hAl1927 license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalConwy') }}"><p class="card-text text-center btn-outline-danger btn-lg">Conwy</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/7568/16184620981_a644489d65_b.jpg" alt="denbighshire quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Mango Bongo license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalDenbighshire') }}"><p class="card-text text-center btn-outline-danger btn-lg">Denbighshire</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Hawarden_railway_station%2C_Flintshire_%28geograph_6141598%29.jpg" alt="" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Jaggery license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalFlintshire') }}"><p class="card-text text-center btn-outline-danger btn-lg">Flintshire</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/4205/35683105682_cd79df96b4_b.jpg" alt="gwynedd quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">sidibousaid60 license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalGwynedd') }}"><p class="card-text text-center btn-outline-danger btn-lg">Gwynedd</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8456/7924222812_8ff6c5a38a_b.jpg" alt="anglesey quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">nathanrjones1979 license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalAnglesey') }}"><p class="card-text text-center btn-outline-danger btn-lg">Isle of Anglesey</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="http://s0.geograph.org.uk/photos/02/45/024577_cbd66c1b.jpg" alt="merthyr quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Pete Chapman license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalMerthyr') }}"><p class="card-text text-center btn-outline-danger btn-lg">Merthyr Tydfil</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/3940/33088620194_ce7a318f95_b.jpg" alt="monmouthshire quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">gordonplant license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalMonmouthshire') }}"><p class="card-text text-center btn-outline-danger btn-lg">Monmouthshire</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://s0.geograph.org.uk/geophotos/05/47/48/5474860_e8812ae5.jpg" alt="neath port talot quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Lewis Clarke license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalNeathPortTalbot') }}"><p class="card-text text-center btn-outline-danger btn-lg">Neath Port Talbot</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/485/18817973724_285150c1b8_b.jpg" alt="pembrokeshire quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">gordonplant license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalPembrokeshire') }}"><p class="card-text text-center btn-outline-danger btn-lg">Pembrokeshire</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/5173/5727121894_60b309df88_b.jpg" alt="powys quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Dave Hamster license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalPowys') }}"><p class="card-text text-center btn-outline-danger btn-lg">Powys</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/5754/22706555231_09e8bbba8f_b.jpg" alt="rhondda cynon taff quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Viking Visual license CC BY-ND 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalRhondda') }}"><p class="card-text text-center btn-outline-danger btn-lg">Rhondda Cynon Taff</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/7287/9694921630_1b61b5c9ee_b.jpg" alt="swansea quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Nigel Swales license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalSwansea') }}"><p class="card-text text-center btn-outline-danger btn-lg">Swansea</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/65535/49526156446_673d50bc4e_b.jpg" alt="torfaen quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">_ferloz license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalTorfaen') }}"><p class="card-text text-center btn-outline-danger btn-lg">Torfaen</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/St.Donat%E2%80%99s_Village%2C_Vale_of_Glamorgan.jpg" alt="vale of glamorgan quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Peter Wasp license CC BY-SA 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalGlamorgan') }}"><p class="card-text text-center btn-outline-danger btn-lg">Vale of Glamorgan</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/65535/48602399262_54f9ebe4bf_b.jpg" alt="wrexham quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">kitmasterbloke license CC BY 2</p>
+              <div class="card-body">
+                <a href="{{ url_for('smallquiz', quizName='generalWrexham') }}"><p class="card-text text-center btn-outline-danger btn-lg">Wrexham</p></a>
+                <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/3017/2902463288_5f0d2303b2_b.jpg" alt="" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Dave Hamster license CC BY 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('fivequiz', quizName='fiveCounties') }}"><p class="card-text text-center btn-outline-danger btn-lg">Five Largest Counties</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
 
 <a name="ten"></a>
   <div class="album py-5 bg-light">
@@ -645,6 +1118,34 @@
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
+            <img src="https://farm4.staticflickr.com/3087/2810160173_e9c47c6018_b.jpg" alt="National Park I Quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">the real Tiggy license CC BY 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('picturequiz2', quizName='nationalPark') }}"><p class="card-text text-center btn-outline-danger btn-lg">Guess the National Park I</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/8005/6982732686_63618d0e48_b.jpg" alt="National Park II Quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Carnachenwen Mathry license CC BY-ND 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('picturequiz2', quizName='nationalParkII') }}"><p class="card-text text-center btn-outline-danger btn-lg">Guess the National Park II</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
             <img src="https://live.staticflickr.com/7079/7203521926_74ed514c89_b.jpg" width="100%" height="225">
             <p class="text-right font-weight-light" style="color: darkgray;">paul_p! license CC BY 2</p>
             <div class="card-body">
@@ -679,6 +1180,20 @@
               <a href="{{ url_for('picturequiz2', quizName='aonbIV') }}"><p class="card-text text-center btn-outline-danger btn-lg">Guess the AONB IV</p></a>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group text-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://live.staticflickr.com/3646/3360606523_1daa27bc01_b.jpg" alt="National Park III Quiz" width="100%" height="225">
+            <p class="text-right font-weight-light" style="color: darkgray;">Steve 2.0 license CC BY-SA 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('picturequiz2', quizName='nationalParkIII') }}"><p class="card-text text-center btn-outline-danger btn-lg">Guess the National Park III</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
                 </div>
               </div>
             </div>
