@@ -31,6 +31,12 @@ def blogentry(blogName):
     myObject = getattr(blog, blogName)
     return render_template('blog.html', myObject=myObject)
 
+@app.route("/shortblog/<blogName>")
+def shortblogentry(blogName):
+    import blog
+    myObject = getattr(blog, blogName)
+    return render_template('shortblog.html', myObject=myObject)
+
 @app.route("/blog2")
 def blog2():
     return render_template('blog2.html')
@@ -70,6 +76,16 @@ def jumbo():
 @app.route("/sport")
 def sport():
     return render_template('sport.html')
+
+@app.route("/chloropethCounties")
+def chloropethCounties():
+    return render_template('chloropethCounties.html')
+
+@app.route("/mapquiz/<quizName>")
+def mapquiz(quizName):
+    import quizzes
+    myObject = getattr(quizzes, quizName)
+    return render_template('mapquiz.html', myObject=myObject)
 
 @app.route("/picturequiz/<quizName>")
 def picturequiz(quizName):

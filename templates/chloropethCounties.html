@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+
+<style>
+    #quizbox {
+        border: solid;
+        border-width: 1px;
+    } 
+    #mapid { 
+      height: 680px; 
+    }
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+<script type="text/javascript" src="static/js/counties.js"></script>
+<script type="text/javascript" src="static/js/anglesey.js"></script>
+<script type="text/javascript" src="static/js/blaenau.js"></script>
+<script type="text/javascript" src="static/js/bridgend.js"></script>
+<script type="text/javascript" src="static/js/caerphilly.js"></script>
+<script type="text/javascript" src="static/js/carmarthenshire.js"></script>
+<script type="text/javascript" src="static/js/ceredigion.js"></script>
+<script type="text/javascript" src="static/js/swansea.js"></script>
+<script type="text/javascript" src="static/js/cardiff.js"></script>
+<script type="text/javascript" src="static/js/conwy.js"></script>
+<script type="text/javascript" src="static/js/denbighshire.js"></script>
+<script type="text/javascript" src="static/js/flintshire.js"></script>
+<script type="text/javascript" src="static/js/gwynedd.js"></script>
+<script type="text/javascript" src="static/js/merthyr.js"></script>
+<script type="text/javascript" src="static/js/monmouthshire.js"></script>
+<script type="text/javascript" src="static/js/neath.js"></script>
+<script type="text/javascript" src="static/js/newport.js"></script>
+<script type="text/javascript" src="static/js/pembrokeshire.js"></script>
+<script type="text/javascript" src="static/js/powys.js"></script>
+<script type="text/javascript" src="static/js/rhondda.js"></script>
+<script type="text/javascript" src="static/js/torfaen.js"></script>
+<script type="text/javascript" src="static/js/glamorgan.js"></script>
+<script type="text/javascript" src="static/js/wrexham.js"></script>
+
+
+<main role="main" class="container text-center">
+  <div class="jumbotron">
+    <h1>Welsh Counties</h1>
+    <p class="lead">Can you name all 22 Welsh counties?</p>
+  </div>
+
+  <div class="container">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Answers:</span>
+        </div>
+        <input type="text" id="myInput" oninput="myFunction()" class="form-control" placeholder="Enter your answers here" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </div>
+
+    <div id="mapid"></div>
+    <p></p>
+
+</div>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+          <h4>Select another topic</h4>
+          <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2 btn-lg">Culture</a>
+          <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2 btn-lg">General Knowledge</a>
+          <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2 btn-lg">History</a>
+          <a href="{{ url_for('regions') }}" class="btn btn-outline-success my-2 btn-lg">Regions</a>
+          <a href="{{ url_for('geography') }}" class="btn btn-outline-success my-2 btn-lg">Geography</a>
+          <a href="{{ url_for('jumbo') }}" class="btn btn-outline-success my-2 btn-lg">Jumbo Quizzes</a>
+          <a href="{{ url_for('sport') }}" class="btn btn-outline-success my-2 btn-lg">Sport</a>
+          <a href="{{ url_for('transport') }}" class="btn btn-outline-success my-2 btn-lg">Transport</a>
+          <a href="{{ url_for('sport', _anchor='rugby') }}" class="btn btn-outline-success my-2 btn-lg">Rugby</a>
+          <a href="{{ url_for('sport', _anchor='football') }}" class="btn btn-outline-success my-2 btn-lg">Football</a>
+          <a href="{{ url_for('culture', _anchor='language') }}" class="btn btn-outline-success my-2 btn-lg">Language</a>
+          <a href="{{ url_for('culture', _anchor='literature') }}" class="btn btn-outline-success my-2 btn-lg">Literature</a>
+          <a href="{{ url_for('culture', _anchor='film') }}" class="btn btn-outline-success my-2 btn-lg">Film</a>
+          <a href="{{ url_for('culture', _anchor='tv') }}" class="btn btn-outline-success my-2 btn-lg">TV</a>
+          <a href="{{ url_for('culture', _anchor='music') }}" class="btn btn-outline-success my-2 btn-lg">Music</a>
+        </p>
+      </div>
+    </section>
+
+<script>
+var map = L.map('mapid', {
+    center: [52.448413, -3.540514],
+    zoom: 8,
+    dragging: false,
+    minZoom: 8,
+    maxZoom: 8
+});
+
+var myStyle = {
+    "color": "#ff0000",
+    "weight": 4,
+};
+
+var correct = {
+  "color": "#ff0000",
+  "fillOpacity": 1
+}
+
+L.geoJSON(welshCounties, {
+    style: myStyle
+}).addTo(map);
+
+L.tileLayer(
+"https://stamen-tiles.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}@2x.png" // stamen toner tiles
+).addTo(map);
+
+function myFunction() {
+        var x = document.getElementById("myInput").value;
+        var x = x.toLowerCase();
+        if (x == "anglesey") {
+          L.geoJSON(anglesey, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "blaenau gwent") {
+          L.geoJSON(blaenauGwent, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "bridgend") {
+          L.geoJSON(bridgend, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "caerphilly") {
+          L.geoJSON(caerphilly, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "carmarthenshire") {
+          L.geoJSON(carmarthenshire, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "ceredigion") {
+          L.geoJSON(ceredigion, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "swansea") {
+          L.geoJSON(swansea, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "cardiff") {
+          L.geoJSON(cardiff, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "conwy") {
+          L.geoJSON(conwy, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "denbighshire") {
+          L.geoJSON(denbighshire, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "flintshire") {
+          L.geoJSON(flintshire, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "gwynedd") {
+          L.geoJSON(gwynedd, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "merthyr tydfil") {
+          L.geoJSON(merthyrTydfil, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "monmouthshire") {
+          L.geoJSON(monmouthshire, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "neath port talbot") {
+          L.geoJSON(neathPorthTalbot, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "newport") {
+          L.geoJSON(newport, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "pembrokeshire") {
+          L.geoJSON(pembrokeshire, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "powys") {
+          L.geoJSON(powys, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "rhondda cynon taf") {
+          L.geoJSON(rhonddaCynonTaf, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "torfaen") {
+          L.geoJSON(torfaen, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "vale of glamorgan") {
+          L.geoJSON(valeOfGlamorgan, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+        if (x == "wrexham") {
+          L.geoJSON(wrexham, {
+            style: correct
+          }).addTo(map);
+          document.getElementById("myInput").value = "";
+        }
+    }
+
+</script>
+  
+
+
+{% endblock %}

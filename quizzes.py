@@ -45,6 +45,26 @@ class flexQuiz:
         self.headline = headline
         self.description = description
 
+class mapQuiz:
+    def __init__(self, lat, long, answer, headline, description):
+        self.lat = lat
+        self.long = long
+        self.answer = answer
+        self.headline = headline
+        self.description = description
+
+class chloropeth:
+    def __init__(self, *args, headline, description):
+        self.answers = args
+        self.headline = headline
+        self.description = description 
+
+## Map Quizzes
+mapDemo = mapQuiz("51.48", "-3.18", "cardiff", "Welsh Cities", "Which Welsh city is this?")
+
+## Chloropeth quizzes
+countyChloropeth = chloropeth("anglesey", "blaenau gwent", "bridgend", "caerphilly", "carmarthenshire", "ceredigion", "swansea", "cardiff", "conwy", "denbighshire", "flintshire", "gwynedd", "merthyr tydfil", "monmouthshire", "neath port talbot", "newport", "pembrokeshire", "powys", "rhondda cynon taf", "torfaen", "vale of glamorgan", "wrexham", headline="Welsh Counties", description="Can you name all 22 Welsh counties?")
+
 ## Geography
 beaches = pictureQuiz('https://live.staticflickr.com/2831/9378481418_9486c5f64a_b.jpg', 'https://live.staticflickr.com/2864/9511407504_8877c7b9a4_b.jpg', 'https://farm9.staticflickr.com/8005/6982732686_63618d0e48_b.jpg', 'http://s0.geograph.org.uk/photos/74/27/742730_505bf2dc.jpg', 'https://live.staticflickr.com/65535/49114791961_9cc6054a1b_b.jpg', 'https://live.staticflickr.com/1094/1466156787_eced7cda81_b.jpg', 'rhossili', 'barafundle bay', 'marloes sands', 'mwnt', 'porthdinllaen', 'three cliffs bay', 'Nigel Swales license CC BY-SA 2', 'rhedeg license CC BY 2', 'Carnachenwen Mathry license CC BY-ND 2', 'Bob Jones license CC BY-SA 2', 'ohefin license CC BY-SA 2', 'ladyr6 license CC BY-ND 2', headline='Beaches', description='Can you name these beautiful beaches?')
 cardiff = pictureQuiz("https://live.staticflickr.com/3093/2447867298_5d91b58a8c_b.jpg", "https://live.staticflickr.com/5517/9105014755_b5914d59b8_b.jpg", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Llandaff_Cathedral_%28geograph_3435762_cropped%29.jpg", "https://live.staticflickr.com/3192/2561053765_19e1715e9f_b.jpg", "https://live.staticflickr.com/3027/2690761244_8c1eebfc3b_b.jpg", "https://farm2.staticflickr.com/1657/26589980926_3eb4ebbf74_b.jpg", "cardiff castle", "wales millennium centre", "llandaff cathedral", "castell coch", "cardiff bay", "roath park", "plumandjello license CC BY-SA 2", "Matty Ring license CC BY 2", "Bill Boaden license CC BY-SA 2", "potamos.photography license CC BY-ND 2", "espinr license CC BY 2", "gordonplant license CC BY 2", headline="Cardiff", description="Can you name these iconic Cardiff locations?")
