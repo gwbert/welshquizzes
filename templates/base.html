@@ -53,38 +53,26 @@
   </head>
   <body>
     <header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Croeso! Welcome to welshquizzes.com, a trivia site dedicated to the beautiful country of Wales. welshquizzes.com brings Wales to life through a huge number of quizzes. Know your Edward I castles from your Norman ones? Know your Hinterland from your Keeping Faith? Then pick a topic and get quizzing!</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="{{ url_for('about') }}" class="text-white">About</a></li>
-            <li><a href="{{ url_for('blog2') }}" class="text-white">Blog</a></li>
-            <li><a href="{{ url_for('email') }}" class="text-white">Email the Team</a></li>
-            <li><a href="{{ url_for('errata') }}" class="text-white">Errata</a></li>
-            <li><a href="{{ url_for('index') }}" class="text-white">Home</a></li>
-            <li><a href="{{ url_for('suggest') }}" class="text-white">Suggest a quiz</a></li>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">welshquizzes.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('blog2') }}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('about') }}" tabindex="-1" aria-disabled="true">About</a>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-      <a href="{{ url_for('index') }}" class="navbar-brand d-flex align-items-center">
-        <strong>welshquizzes.com</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
+      </nav>
+    </header>
 
 
 {% block content %}
