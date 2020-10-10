@@ -3,6 +3,7 @@
 
 <!-- Custom styles for this template -->
 <link href="https://getbootstrap.com/docs/4.5/examples/carousel/carousel.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/4.4/examples/blog/blog.css" rel="stylesheet">
 
 <main role="main">
 
@@ -14,32 +15,26 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1557316655-8715fdecd2d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="wales">
         <div class="container">
           <div class="carousel-caption text-left">
-            <h1>Landscapes.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Enter</a></p>
+            <h1>Mountains.</h1>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="https://images.unsplash.com/photo-1595259013472-f1f73efbd74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="wales">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Mountains.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <h1>Coastline.</h1>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="https://images.unsplash.com/photo-1505576087875-4a7ba6c1142c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80" alt="wales">
         <div class="container">
           <div class="carousel-caption text-right">
-            <h1>Culture.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse quizzes</a></p>
+            <h1>Landscapes.</h1>
           </div>
         </div>
       </div>
@@ -54,8 +49,9 @@
     </a>
   </div>
 
-  <section class="text-center jumbotron">
+  <section class="text-center">
       <div class="container">
+        <h1>Welcome to welshquizzes.com</h1>
         <p class="lead text-center">Pick a topic or scroll down to get quizzing!</p>
           <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2 btn-lg">Culture</a>
           <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2 btn-lg">General Knowledge</a>
@@ -75,6 +71,149 @@
         </p>
       </div>
     </section>
+
+
+    <div class="container">
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Welsh Counties. <span class="text-muted">Name them all.</span></h2>
+      <p class="lead">How well do you know Wales?</p>
+    </div>
+    <div class="col-md-5">
+      <a href="/chloropethCounties" class="stretched-link btn-warning"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/307451/walking-dragon-legend-myth-folklore.svg"></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Welsh Numbers. <span class="text-muted">1-10.</span></h2>
+      <p class="lead">Pob lwc!.</p>
+    </div>
+    <div class="col-md-5">
+    <a href="{{ url_for('tenquiz', quizName='welshNumbers') }}" class="stretched-link btn-warning"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/37432/wales.svg"></svg>
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Rugby. <span class="text-muted">Most tries.</span></h2>
+      <p class="lead">Too short to play rugby, they said.</p>
+    </div>
+    <div class="col-md-5">
+      <a href="{{ url_for('tenquiz', quizName='mostTries') }}" class="stretched-link btn-warning"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/30529/rugby.svg"></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Placenames. <span class="text-muted">Welsh to English.</span></h2>
+      <p class="lead">Can you translate these Welsh placenames?.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <a href="{{ url_for('mediumquiz', quizName='welshPlacenames') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/78099/city.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Welsh Music Quiz. <span class="text-muted">Easy.</span></h2>
+      <p class="lead">If you don't know these, you're not really Welsh.</p>
+    </div>
+    <div class="col-md-5">
+      <a href="{{ url_for('smallquiz', quizName='musicEasy') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/85269/music.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Welsh Surnames. <span class="text-muted">Top twenty.</span></h2>
+      <p class="lead">But which one is top?</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <a href="{{ url_for('twentyquiz', quizName='twentySurnames') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/410/list.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Cardiff. <span class="text-muted">Picture quiz.</span></h2>
+      <p class="lead">How many do you know?</p>
+    </div>
+    <div class="col-md-5">
+      <a href="{{ url_for('picturequiz', quizName='cardiff') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/80646/castle.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">NC500. <span class="text-muted">Towns.</span></h2>
+      <p class="lead">Can you name them?</p>
+    </div>
+    <div class="col-md-5">
+      <a href="/nc500" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/78928/mountains.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Compass Point. <span class="text-muted">Munros.</span></h2>
+      <p class="lead">Can you name them?</p>
+    </div>
+    <div class="col-md-5">
+      <a href="/compasspointmunros" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/263110/mountain.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Shetland. <span class="text-muted">Populated Islands.</span></h2>
+      <p class="lead">Can you name them all?</p>
+    </div>
+    <div class="col-md-5">
+      <a href="/shetland" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/224576/viking-ship-vessel.svg"></image></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+  <!-- /END THE FEATURETTES -->
+
+</div>
+
+<section class="text-center">
+  <div class="container">
+    <h1>Even more quizzes!</h1>
+  </div>
+</section>
   
    
   </main>
