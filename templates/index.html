@@ -52,7 +52,8 @@
   <section class="text-center">
       <div class="container">
         <h1>Welcome to welshquizzes.com</h1>
-        <p class="lead text-center">Pick a topic or scroll down to get quizzing!</p>
+        <p class="lead text-center">Welcome to the home of Welsh trivia online, dedicated to bringing the best quality quiz content centered on the beautiful country of Wales. Think you know Wales? We've got a quiz for that! Would you like to know more about Wales? We've got a quiz for that too. Don't quite know where to start, then we recommend you browse through the topics below or try one of our Featured Quizzes below.</p>
+        <h3>Topics</h3>
           <a href="{{ url_for('culture') }}" class="btn btn-outline-success my-2 btn-lg">Culture</a>
           <a href="{{ url_for('general') }}" class="btn btn-outline-success my-2 btn-lg">General Knowledge</a>
           <a href="{{ url_for('history') }}" class="btn btn-outline-success my-2 btn-lg">History</a>
@@ -76,6 +77,13 @@
     <div class="container">
   <!-- START THE FEATURETTES -->
 
+  <div class="container text-center">
+    <hr class="featurette-divider">
+
+
+    <h1>Featured Quizzes</h1>
+  </div>
+
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
@@ -92,7 +100,7 @@
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading">Welsh Numbers. <span class="text-muted">1-10.</span></h2>
-      <p class="lead">Pob lwc!.</p>
+      <p class="lead">Pob lwc!</p>
     </div>
     <div class="col-md-5">
     <a href="{{ url_for('tenquiz', quizName='welshNumbers') }}" class="stretched-link btn-warning"></a>
@@ -169,12 +177,12 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">NC500. <span class="text-muted">Towns.</span></h2>
+      <h2 class="featurette-heading">Actors. <span class="text-muted">Welsh-speaking.</span></h2>
       <p class="lead">Can you name them?</p>
     </div>
     <div class="col-md-5">
-      <a href="/nc500" class="stretched-link"></a>
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/78928/mountains.svg"></image></svg>
+      <a href="{{ url_for('mediumquiz', quizName='actorsCymraeg') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/56171/daffodil.svg"></image></svg>
     </div>
   </div>
 
@@ -182,12 +190,12 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Compass Point. <span class="text-muted">Munros.</span></h2>
-      <p class="lead">Can you name them?</p>
+      <h2 class="featurette-heading">Common Welsh Words. <span class="text-muted">Welsh to English.</span></h2>
+      <p class="lead"></p>Can you translate these common Welsh words?</p>
     </div>
     <div class="col-md-5">
-      <a href="/compasspointmunros" class="stretched-link"></a>
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/263110/mountain.svg"></image></svg>
+      <a href="{{ url_for('mediumquiz', quizName='welshWords') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/92830/chapel.svg"></image></svg>
     </div>
   </div>
 
@@ -195,12 +203,12 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">Shetland. <span class="text-muted">Populated Islands.</span></h2>
-      <p class="lead">Can you name them all?</p>
+      <h2 class="featurette-heading">Wonderfully Welsh. <span class="text-muted">Sporting events.</span></h2>
+      <p class="lead">Can you name these 6 uniquely Welsh events?</p>
     </div>
     <div class="col-md-5">
-      <a href="/shetland" class="stretched-link"></a>
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/224576/viking-ship-vessel.svg"></image></svg>
+      <a href="{{ url_for('picturequiz', quizName='welshSports') }}" class="stretched-link"></a>
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><image href="https://www.svgrepo.com/show/92221/snorkel.svg"></image></svg>
     </div>
   </div>
 
