@@ -7,7 +7,11 @@ bootstrap = Bootstrap(app)
 @app.route("/")
 @app.route("/index")
 def index():
-    return render_template('index.html')
+    import quote, random
+    quotes = quote.quotes
+    random.shuffle(quotes)
+    qotd = quotes[0]
+    return render_template('index.html', qotd=qotd)
 
 @app.route("/about")
 def about():
