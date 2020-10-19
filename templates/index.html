@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block head %} <meta name="description" content="Beautiful, interactive & free Welsh quizzes."> {% endblock %}
+
 {% block title %} Welsh Quizzes: the home of Welsh trivia {% endblock %}
 
 {% block content %}
@@ -84,7 +86,7 @@
       </div>
     </section>
 
-    <hr>
+    <hr class="featurette-divider">
 
 
 <div class="row">
@@ -96,7 +98,7 @@
     <p></p>
     <p></p>
     <h3><b>Welsh quote of the day</b></h3> 
-    <h3>{{ qotd }}</h3>
+    <h3><i>{{ qotd }}</i></h3>
   </div>
   </div>
 

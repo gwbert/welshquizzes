@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block head %} <meta name="description" content="Beautiful, interactive & free Welsh sport quizzes."> {% endblock %}
+
 {% block title %} Welsh Sport Quizzes {% endblock %}
 
 {% block content %}
@@ -27,127 +29,100 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/6231/6868542756_49807ca18a_b.jpg" alt="welsh rugby" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='mostTries') }}"><p class="card-text text-center btn-outline btn-lg">Rugby: most tries</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1529663297269-6d349ec39b57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh rugby" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/1005/5190204039_1806376ed3_b.jpg" alt="welsh rugby" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='mostPoints') }}"><p class="card-text text-center btn-outline btn-lg">Rugby: most points</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1517340650606-17091f8e86ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh rugby" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/8199/8219554427_db7a5dd275_b.jpg" alt="welsh rugby" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">simonw92 license CC BY-ND 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='rugbyMostCaps') }}"><p class="card-text text-center btn-outline btn-lg">Rugby: most caps</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1558151507-c1aa3d917dbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh rugby" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/4090/5190203107_3da0d72816_b.jpg" alt="welsh rugby" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">joncandy is licensed under CC BY-SA 2</p>
             <div class="card-body">
-              <a href="{{ url_for('tenquiz', quizName='sixNations') }}"><p class="card-text text-center btn-outline btn-lg">Wales Six Nation Wins</p></a>
+              <a href="{{ url_for('tenquiz', quizName='rugbyOpponents') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Rugby Opponents</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1574602904329-56e2f95fb15e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh rugby" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/6047/6246178676_81ee9c4a3d_b.jpg" alt="welsh rugby" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
-            <div class="card-body">
-              <a href="{{ url_for('tenquiz', quizName='rugbyOpponents') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Rugby: Opponents</p></a>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Millennium_Stadium%2C_Cardiff%2C_Wales%2C_UK.jpg" alt="welsh rugby" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">CivArmy license CC BY-SA 4</p>
-            <div class="card-body">
-              <a href="{{ url_for('tenquiz', quizName='rugbyCoaches') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Rugby Coaches</p></a>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jackson_Hall%2C_Westgate_Street%2C_Cardiff%2C_October_2018_15_09_47_791000.jpeg" alt="modern welsh rugby quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">No Swan So Fine license CC BY-SA 4</p>
-            <div class="card-body">
-              <a href="{{ url_for('mediumquiz', quizName='modernWelshRugby') }}"><p class="card-text text-center btn-outline btn-lg">Modern Welsh Rugby Quiz</p></a>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/7064/6862392522_fcb59bf3d3_b.jpg" alt="Six Nations Welsh Quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">National Assembly For Wales license CC BY 2</p>
             <div class="card-body">
               <a href="{{ url_for('smallquiz', quizName='sixNationsQuiz') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Six Nations</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1516011826302-d3b76e9bef23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Six Nations Welsh Quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/8879/18461026705_de6924d33a_b.jpg" alt="Welsh rugby clubs quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Papchinskaya license CC BY 2</p>
+            <div class="card-body">
+              <a href="{{ url_for('tenquiz', quizName='rugbyCoaches') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Rugby Coaches</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1574602904316-f84f62477265?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh rugby" width="100%" height="225">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <a href="{{ url_for('mediumquiz', quizName='modernWelshRugby') }}"><p class="card-text text-center btn-outline btn-lg">Modern Welsh Rugby</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1534583000938-a375b825ea16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="modern welsh rugby quiz" width="100%" height="225">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <a href="{{ url_for('tenquiz', quizName='sixNations') }}"><p class="card-text text-center btn-outline btn-lg">Wales Six Nation Wins</p></a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1512299286776-c18be8ed6a1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh rugby" width="100%" height="225">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
             <div class="card-body">
               <a href="{{ url_for('smallquiz', quizName='rugbyCLubs') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Rugby Clubs</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1496224027003-38fc92be458c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Welsh rugby clubs quiz" width="100%" height="225">
           </div>
         </div>
 
@@ -161,169 +136,145 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://farm8.staticflickr.com/7340/13993732949_86496aa82d_b.jpg" alt="welsh football" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Matthew Wilkinson license CC BY-ND 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='mostGoals') }}"><p class="card-text text-center btn-outline btn-lg">Football: most goals</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="welsh football" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://farm8.staticflickr.com/7511/15214437974_083f1d3c7c_b.jpg" alt="welsh football" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">grassrootsgroundswell license CC BY 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='footballCaps') }}"><p class="card-text text-center btn-outline btn-lg">Football: most caps</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group text-center">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh football" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/45/145188028_0017f59a54_b.jpg" alt="welsh football" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Oglord license CC BY-SA 2</p>
             <div class="card-body">
-              <a href="{{ url_for('tenquiz', quizName='biggestFootballGrounds') }}"><p class="card-text text-center btn-outline btn-lg">Largest Football Grounds</p></a>
+              <a href="{{ url_for('tenquiz', quizName='biggestFootballGrounds') }}"><p class="card-text text-center btn-outline btn-lg">Largest Grounds</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="welsh football" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Nantporth_main_stand_2013.jpg" alt="welsh football" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Cls14 license CC BY-SA 4</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='welshPremierLeague') }}"><p class="card-text text-center btn-outline btn-lg">Cymru Premier Winners</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh football" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/The_Entrance_Channel_to_Barry_Harbour.jpg" alt="welsh football" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">M J Richardson license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='welshCup') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Cup Winners</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh football" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/7204/6862730209_1b39858e48_b.jpg" alt="welsh football" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('tenquiz', quizName='cardiffKit') }}"><p class="card-text text-center btn-outline btn-lg">Cardiff City: kit</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="welsh football" width="100%" height="225">
           </div>
+        </div>
+
+        <div class="col-md-2">
+        </div>
+        
+        <div class="col-md-8">
+        <div class="container text-center">
+        <p class="lead"><b>Did you know?</b> Wales have participated in the European Championship since 1960, but only qualified for the finals twice, in 2016 and 2020.</p>
+        </div>
+        </div>
+        
+        <div class="col-md-2">
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/8148/7643363984_bff6a979e9_b.jpg" alt="Wales euro 2016 quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">joncandy license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('smallquiz', quizName='euro2016') }}"><p class="card-text text-center btn-outline btn-lg">Wales: Euro 2016</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1551280857-2b9bbe52acf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Wales euro 2016 quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://farm3.staticflickr.com/2917/14157159536_b6410e12a9_b.jpg" alt="most goals by Welsh footballer in premier league quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Matthew Wilkinson license CC BY-ND 2</p>
             <div class="card-body">
               <a href="{{ url_for('twentyquiz', quizName='plGoals') }}"><p class="card-text text-center btn-outline btn-lg">Most goals in PL</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1508087625439-de3978963553?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" alt="most goals by Welsh footballer in premier league quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Old_Trafford_-_panoramio_-_Flippo.jpg" alt="Ryan Giggs Quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Flippo license CC BY-SA 3</p>
             <div class="card-body">
               <a href="{{ url_for('mediumquiz', quizName='ryanGiggs') }}"><p class="card-text text-center btn-outline btn-lg">Ryan Giggs Quiz</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/flagged/photo-1571771710019-ca58cf80f225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Ryan Giggs Quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/3217/3135133775_24cc88ce8f.jpg" alt="Gareth Bale Quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">DANIEL IS CLEVER license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('mediumquiz', quizName='garethBale') }}"><p class="card-text text-center btn-outline btn-lg">Gareth Bale Quiz</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1487466365202-1afdb86c764e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" alt="Gareth Bale Quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Emirates_Stadium_2000_03.jpg" alt="Aaron Ramsey Quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Zakarie Faibis license CC BY-SA 4</p>
             <div class="card-body">
               <a href="{{ url_for('mediumquiz', quizName='aaronRamsey') }}"><p class="card-text text-center btn-outline btn-lg">Aaron Ramsey Quiz</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Aaron Ramsey Quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Wiki15_Welsh_Dragon.svg" alt="welsh footballer with most permier league caps quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Jason.NLW license CC0 1</p>
             <div class="card-body">
               <a href="{{ url_for('fivequiz', quizName='plCaps') }}"><p class="card-text text-center btn-outline btn-lg">Most PL games</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh footballer with most permier league caps quiz" width="100%" height="225">
           </div>
         </div>
 
@@ -340,127 +291,100 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/7249/8160178124_f8d76f1d02.jpg" alt="geraint thomas stage races wins" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Mountain Bike Mt Cook, New Zealand license CC BY 2</p>
             <div class="card-body">
               <a href="{{ url_for('fivequiz', quizName='gThomasStageRaces') }}"><p class="card-text text-center btn-outline btn-lg">Geraint Thomas: stage races</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1535912989155-f7898ec2e5df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="geraint thomas stage races wins" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/2011_wales_rally_gb_by_2eight_dsc0930.jpg" alt="wonderful welsh sporting events" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Stefan Brending (2eight) license CC BY-SA 3</p>
             <div class="card-body">
-              <a href="{{ url_for('picturequiz', quizName='welshSports') }}"><p class="card-text text-center btn-outline btn-lg">Wonderful Welsh Sport Events</p></a>
+              <a href="{{ url_for('picturequiz', quizName='welshSports') }}"><p class="card-text text-center btn-outline btn-lg">Wonderfully Welsh Sporting Events</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="wonderful welsh sporting events" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/5291/5478662712_30b42fbb92_b.jpg" alt="wonderful welsh sporting arenas" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Brian Marshall license CC BY 2</p>
             <div class="card-body">
-              <a href="{{ url_for('picturequiz', quizName='welshArenas') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Sporting Arenas</p></a>
+              <a href="{{ url_for('picturequiz', quizName='welshArenas') }}"><p class="card-text text-center btn-outline btn-lg">Wonderfully Welsh Sporting Arenas</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1595273647789-54432cefc8e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="wonderful welsh sporting arenas" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/55/146733526_01a35beaa2_b.jpg" alt="2016 Welsh Olympic Medallists" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">SqueakyMarmot license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('elevenquiz', quizName='welshOlympians') }}"><p class="card-text text-center btn-outline btn-lg">2016 Welsh Olympic Medallists</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="2016 Welsh Olympic Medallists" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/46/136678683_a854b1cebf_b.jpg" alt="Rio 2016 Welsh medallists" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">SqueakyMarmot license CC BY-SA 2</p>
             <div class="card-body">
               <a href="{{ url_for('elevenquiz', quizName='welshOlympiansII') }}"><p class="card-text text-center btn-outline btn-lg">2016 Welsh Olympic Medals II</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1589394760151-b4c9890765fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1031&q=80" alt="Rio 2016 Welsh medallists" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/7210/6832895730_bb15c66637_b.jpg" alt="welsh snooker stars" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;"> konstmat license CC BY-ND 2</p>
             <div class="card-body">
-              <a href="{{ url_for('fivequiz', quizName='welshSnooker') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Snooker Stars</p></a>
+              <a href="{{ url_for('fivequiz', quizName='welshSnooker') }}"><p class="card-text text-center btn-outline btn-lg">Wonderfully Welsh Snooker Stars</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1520970192450-03c23cea6b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh snooker stars" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/8566/16538795848_d605a6616c_b.jpg" alt="geraint thomas quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">Glory Cycles license CC BY 2</p>
             <div class="card-body">
               <a href="{{ url_for('mediumquiz', quizName='gThomas') }}"><p class="card-text text-center btn-outline btn-lg">Geraint Thomas</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1482636488340-23968688f565?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="geraint thomas quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://live.staticflickr.com/5563/14907472200_27c6d8f1b5_b.jpg" alt="welsh track cyclists quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">GCampbellHall license CC BY 2</p>
             <div class="card-body">
               <a href="{{ url_for('smallquiz', quizName='trackCyclists') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Track Cyclists</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1517482359597-b3f5ba0d52ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh track cyclists quiz" width="100%" height="225">
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Eirias_2006.jpg" alt="welsh athletics quiz" width="100%" height="225">
-            <p class="text-right font-weight-light" style="color: darkgray;">AW76 license CC BY-SA 4</p>
             <div class="card-body">
               <a href="{{ url_for('smallquiz', quizName='welshAthletics') }}"><p class="card-text text-center btn-outline btn-lg">Welsh Athletics</p></a>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
               </div>
             </div>
+            <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1526676037777-05a232554f77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="welsh athletics quiz" width="100%" height="225">
           </div>
         </div>
 
